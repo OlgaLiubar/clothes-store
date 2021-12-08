@@ -1,0 +1,23 @@
+@mixin navigation {
+    &-list {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &-item {
+        list-style: none;
+    }
+
+    &-link {
+        color: color(primary);
+        text-decoration: none;
+        font-size: size(sm);
+        transition: all .3;
+
+        &:hover {
+            color: lighten(color(primary), 40%);
+        }
+    }
+}
